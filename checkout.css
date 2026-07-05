@@ -1,0 +1,554 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+    background: #0b0f19;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    z-index: 999;
+}
+.logo h2{
+    color: #3b82f6;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.menu ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.menu ul li a:hover,
+.menu ul li a.active{
+    color: #3b82f6;
+}
+.menu ul li a::after{
+    position: absolute;
+    content: '';
+    top: 20px;
+    height: 1.2px;
+    width: 0;
+    background-color: #3b82f6;
+    left: 0;
+    transition: 0.3s;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: #1e293b;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    width: 150px;
+}
+.search-box i{
+    color: #94a3b8;
+}
+.icons i{
+    color: #cbd5e1;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icons i:hover{
+    color: #3b82f6;
+}
+.all_countainer .cart{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.all_countainer .cart p{
+    font-weight: bold;
+    color: #2656ab;
+} 
+.all_countainer .cart .fa-chevron-right{
+    color: aliceblue;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.all_countainer .cart .span_1{
+    color: rgb(112, 112, 134);
+}
+.all_countainer .cart .span_2{
+    color: rgb(82, 82, 104);
+}
+.all_countainer .checkout{
+    margin-top: 20px;
+}
+.all_countainer .checkout h1{
+    color: #798496;
+    font-weight: bold;
+    margin-left: 40px;
+    font-size: 2.5rem;
+}
+.all_countainer .two_blog{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+.all_countainer .two_blog .left_blog .first_blog{
+    width: 90%;
+    background-color: #161f2d;
+    color: aliceblue;
+    padding: 35px 70px;
+    margin-left: 40px;
+}
+.all_countainer .two_blog .left_blog .first_blog .shipping{
+    display: flex;
+}
+.all_countainer .two_blog .left_blog .first_blog .shipping .fa-truck{
+    color: #3b82f6;
+}
+.all_countainer .two_blog .left_blog .first_blog .shipping .ship{
+    color: rgb(205, 210, 216);
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.all_countainer .two_blog .left_blog .first_blog .group_label .name_label{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+.group_label .name_label .first_label input{
+    margin-top: 20px;
+    padding: 10px  80px 10px 20px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+}
+.group_label .name_label .first_label label{
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #5c636e;
+    font-weight: bold;
+    font-size: 13px;
+}
+.group_label .name_label .first_label1 input{
+    margin-top: 20px;
+    padding: 10px  80px 10px 20px;
+    margin-left: 75px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.group_label .name_label .first_label1 label{
+    top: 0;
+    right: 230px;
+    position: absolute;
+    color: #5c636e;
+    font-weight: bold;
+    font-size: 13px;
+}
+.group_labe .address_label{
+    position: relative;
+    margin-top: 50px;
+}
+.first_blog .group_label .address_label label{
+    position: absolute;
+    left: 110px;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+}
+.first_blog .group_label .address_label input{
+    margin-top: 20px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    padding: 10px 420px 10px 20px;
+}
+.first_blog .group_label .all_information{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+.first_blog .group_label .all_information .city input{
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    padding: 10px 80px 10px 20px;
+    margin-top: 20px;
+}
+.first_blog .group_label .all_information .city label{
+    position: absolute;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+}
+
+.first_blog .group_label .all_information .state input{
+    outline: none;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.first_blog .group_label .all_information .state label{
+    position: absolute;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+    left: 18rem;
+}
+.first_blog .group_label .all_information .code input{
+    outline: none;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    margin-top: 20px;
+}
+.first_blog .group_label .all_information .code label{
+    position: absolute;
+    left: 31.2rem;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+}
+.stock_pc{
+    display: flex;
+}
+.stock_pc .img img,
+.stock_keybord .img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.stock_pc .img {
+    position: relative;
+}
+.stock_pc .img p{
+    position: absolute;
+    top: 3px;
+    left: 79px;
+    z-index: 1;
+}
+.stock_pc .img .color{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 75px;
+    border-radius: 5px;
+    background-color: #3b82f6;
+}
+.right_blog{
+    margin-left: 40px;
+    color: aliceblue;
+    background-color: #161f2d;
+    padding: 50px 50px;
+}
+.right_blog .group_orlder h3{
+    color: #aab5cb;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.right_blog .group_orlder .stock_pc{
+    margin-top: 10px;
+}
+.right_blog .group_orlder .stock_pc .text_pc{
+    margin-left: 10px;
+}
+.stock_pc .text_pc .first_text h4{
+    color: rgb(225, 228, 241);
+    font-weight: bold;
+}
+.stock_pc .text_pc .first_text p{
+    color: #aab5cb;
+}
+.stock_pc .text_pc .in_stock{
+    display: flex;
+    margin-top: 15px;
+}
+.stock_pc .text_pc .in_stock .stock_mac{
+    background-color: #369ca1;
+    color: #15474a;
+    padding: 2px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.stock_pc .text_pc .in_stock .price_pc{
+    color: #2656ab;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.group_orlder .hr{
+    border: none;
+    margin-top: 30px;
+    height: 1px;
+    background-color: #1c2b42;
+}
+.money_subtotal{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    color: #aeb1b7;
+}
+.two_blog button{
+    height: 60px;
+    width: 450px;
+    margin-top: 30px;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: #0f172a;
+    font-weight: 600;
+}
+.two_blog button:hover{
+    color: rgb(44, 37, 37);
+    background-color: #5d87ca;
+}
+.two_blog .two_icon{
+    display: flex;
+    margin-top: 40px;
+    color: #6c7687;
+    margin-left: 100px;
+}
+.two_blog .two_icon .lock_icon{
+    display: flex;
+    margin-left: 10px;
+}
+.two_blog .two_icon .lock_icon p{
+    margin-left: 10px;
+}
+.two_blog1{
+    margin-top: -300px;
+    color: rgb(252, 252, 252);
+    margin-left: 40px;
+    background-color: #161f2d;
+    width: 53.2%;
+    padding: 40px 70px;
+}
+.two_blog1 h2{
+    color: rgb(205, 210, 216);
+}
+.two_blog1 .fa-cc-visa{
+    color: #2656ab;
+    margin-right: 5px;
+}
+.two_blog1 .all_gruop_card{
+    display: flex;
+    margin-top: 15px;
+}
+.two_blog1 .all_gruop_card .credit{
+    position: relative;
+    display: flex;
+    background-color: #0f2b59;
+    padding: 20px 160px 10px 10px;
+    border: 1px solid rgb(25, 36, 84);
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.two_blog1 .all_gruop_card .credit .credit_card span{
+    margin-top: 10px;
+    color: #647082;
+    font-size: 15px;
+    font-weight: 600;
+}
+.two_blog1 .all_gruop_card .credit .credit_card p{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #5d789d;
+}
+.two_blog1 .all_gruop_card .credit .fa-cc-stripe{
+    position: absolute;
+    top: 25px;
+    left: 230px;
+}
+.two_blog1 .all_gruop_card .credit .fa-cc-paypal{
+    position: absolute;
+    top: 25px;
+    left: 230px;
+}
+.two_blog1 .card_molder_name{
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.two_blog1 .card_molder_name label{
+    position: absolute;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+    top: -10px;
+    left: 0;
+}
+.card_molder_name input{
+    padding: 10px 396px 10px 20px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    outline: none;
+}
+.card_molder_name .no_card::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background-color: rgb(75, 78, 90);
+    top: 20px;
+    left: 500px;
+}
+.card_molder_name .no_card::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background-color: rgb(75, 78, 90);
+    top: 20px;
+    left: 530px;
+}
+.date_cvv{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+.date_cvv .expiry_date label{
+    position: absolute;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+    top: -10px;
+    left: 0;
+}
+.date_cvv .expiry_date .label1{
+    position: absolute;
+    font-weight: bold;
+    color: #5c636e;
+    font-size: 13px;
+    top: -10px;
+    left: 300px;
+}
+.date_cvv .expiry_date input{
+    padding: 10px 100px 10px 20px;
+    margin-right: 12px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(66, 69, 74);
+    border-radius: 5px;
+    outline: none;
+}
+.last_footer{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background-color: #0c0f27;
+    border-radius: 10px;
+    box-shadow: 0 0 20px gray;
+}
+.last_footer .footer{
+    display: flex;
+    justify-content: space-between;
+}
+.last_footer .footer .big_tech1{
+    margin-left: 20px;
+}
+.last_footer .footer .big_tech1 .tech{
+    color: #2e38ff;
+    font-weight: bold;
+}
+.last_footer .footer .big_tech1 p{
+    color: rgb(97, 99, 116);
+    margin-top: 15px;
+}
+.last_footer .footer .solution{
+    color: rgb(97, 99, 116);
+}
+.footer .solution .one{
+    color: rgb(0, 17, 255);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer .solution .two{
+    margin-bottom: 15px;
+}
+.footer .solution .three{
+    margin-bottom: 15px;
+}
+.footer .solution .four{
+    margin-bottom: 15px;
+}
+.footer .company{
+    margin-right: 90px;
+}
+.footer .company .one{
+    margin-bottom: 15px;
+    color: rgb(0, 17, 255);
+    font-weight: bold;
+}
+.footer .company .two{
+    color: gray;
+    margin-bottom: 15px;
+}
+.footer .company .three{
+    margin-bottom: 15px;
+}
+.footer .company .four{
+    margin-bottom: 15px;
+}
+.last_footer .last_web{
+    margin-top: 20px;
+    display: flex;
+    color: rgb(97, 99, 116);
+    justify-content: space-between;
+}
+.last_footer .last_web .community{
+    margin-left: 700px;
+}
+.last_footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 1px;
+    background-color: #161f2d;
+}
